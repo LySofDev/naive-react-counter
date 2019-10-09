@@ -1,4 +1,4 @@
-function reduce(state = initialState, event) {
+function reduce(state, event) {
   if (event.type === "click" && event.target.id === "increment") {
     return { ...state, counter: state.counter + 1 };
   }
