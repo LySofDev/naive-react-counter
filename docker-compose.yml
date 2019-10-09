@@ -3,6 +3,9 @@ version: "3.2"
 services:
   node:
     image: node:dubnium-alpine
+    command: npm run start
+    ports:
+      - 3000:3000
     volumes:
       - .:/usr/src/app
-    working_dir: /usr/src/app
+    working_dir: /usr/src/app/react-counter
