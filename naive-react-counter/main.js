@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-  let hasChange = true;
+  let hasChange = false;
 
   const dispatch = nextEvent => {
     event = nextEvent;
